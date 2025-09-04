@@ -1,0 +1,198 @@
+
+/*
+filename: Mitul Joarder
+
+author: Mitul Joarder
+
+created: 28/08/25
+
+last modified: 28/08/25
+
+description: lab04.html
+
+*/
+:root{
+  --purple: #800080;       
+  --teal:   #008080;       
+  --leftbar:#95A9BD;       
+  --red:    #FF212F;       
+  --orange: #FF9900;       
+  --muted:  #6b6b6b;
+  --page-width: 760px;
+}
+
+html,body{
+  height:100%;
+  background: #ffffff;
+  margin:0;
+  padding:0;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: #222;
+}
+
+
+body {
+  max-width: var(--page-width);
+  margin: 40px 0 80px 72px; 
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+
+header::before{
+  content: "COS10026 - Web Technology Project";
+  display:block;
+  font-size:13px;
+  color: #111;
+  margin-bottom: 8px;
+  letter-spacing: 0.2px;
+}
+
+
+header h1{
+  color: var(--purple);
+  font-size: 28px;
+  line-height:1.05;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+  letter-spacing: -.2px;
+}
+
+
+nav{
+  margin: 8px 0 6px 0;
+  display:block;
+}
+nav a{
+  display: inline-block;
+  margin-right:8px;
+  padding:6px 10px;
+  font-size: 13px;
+  color: #222;
+  background: #f6f8f8;
+  border: 1px solid #c3c9c9;
+  border-radius: 4px;
+  text-decoration: none;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,0.03);
+}
+nav a:hover{
+  background:#eef6f6;
+}
+
+
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, #9fb5bf, #6f9aa5);
+  margin: 18px 0;
+}
+
+
+article {
+  border-left: 10px solid var(--leftbar);
+  padding-left: 18px;
+  margin-top: 10px;
+}
+
+
+h2 {
+  color: var(--teal);
+  font-size: 20px;
+  margin-top: 22px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+
+h3 {
+  color: var(--red);
+  font-size: 15px;
+  margin-top: 12px;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+
+p {
+  color: #222;
+  margin: 8px 0 12px 0;
+  font-size: 14px;
+}
+
+
+
+
+.special {
+  color: var(--orange);
+  font-weight: 600;
+}
+
+
+ul, ol {
+  margin: 8px 0 12px 36px;
+  padding: 0;
+}
+
+dl dt { font-weight: 700; margin-top:8px; }
+dl dd { margin-left:20px; margin-bottom:6px; }
+
+
+table {
+  border-collapse: collapse;
+  margin: 14px 0;
+  width: auto;
+  font-size: 13px;
+  background: #fff;
+  box-shadow: none;
+}
+caption {
+  caption-side: top;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+th, td {
+  border: 1px solid #333;
+  padding: 6px 8px;
+  text-align: center;
+}
+thead th {
+  background: #ffffff; 
+  font-weight: 700;
+}
+tfoot th {
+  background:#f4f4f4;
+  text-align: right;
+  font-weight:700;
+}
+
+
+a { color: var(--teal); text-decoration: underline; }
+a:hover { color: #006666; }
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 8px;
+  border: 2px solid #ececec;
+}
+
+
+footer{
+  margin-top: 28px;
+  padding-top: 14px;
+  border-top: 2px solid #cfcfcf;
+  font-size: 13px;
+  color: #444;
+  position: relative;
+  height: 28px;
+}
+
+
+
+@media (max-width: 860px){
+  body { margin-left: 18px; margin-right:18px; max-width: 100%; }
+  article { border-left-width: 6px; padding-left: 12px; }
+  nav a { margin-bottom:6px; }
+}

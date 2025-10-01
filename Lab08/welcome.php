@@ -1,15 +1,14 @@
 <?php
 session_start();
-
-// Check if the user is logged in
-if (isset($_SESSION['user'])) {
-    // Show personalised welcome message
-    echo "<h2>Welcome, " . htmlspecialchars($_SESSION['user']) . "!</h2>";
-    echo "<p>You have successfully logged in.</p>";
-    echo "<a href='logout.php'>Logout</a>";
-} else {
-    // Redirect to login page if not logged in
-    header("Location: login.html");
+if (!isset($_SESSION['user'])) {
+    header("Location: login.php");
     exit();
 }
+include("header.inc");
 ?>
+
+<h2>Welcome, <?php echo htmlspecialchars($_SESSION['user']); ?>!</h2>
+<p>You have successfully logged in.</p>
+<a href="logout.php">Logout</a>
+
+<?php include("footer.inc"); ?>

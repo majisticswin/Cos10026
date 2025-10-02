@@ -6,7 +6,7 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 
 $correctUsername = "mitul";
-$correctPassword = "105980686"
+$correctPassword = "105980686";
 
 if ($username === $correctUsername && $password === $correctPassword) {
     // Store username in session
